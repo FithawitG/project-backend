@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% blogs.map((blog)=>{ %>
+        <div>
+            <h1>title:<%=blog.title%></h1>
+            <p>content:<%=blog.content%></p>
+
+            <a href="/blog/<%=blog.id%>"><%=blog.title%></a>
+            <a href="/blogdelet/<%=blog.id%>" ></a>
+        </div>
+    <% }) %>
+   
+
+</body>
+</html>

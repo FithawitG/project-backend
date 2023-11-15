@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> <%=locals.text %>home</h2>
+
+    <form action="/rejister" method="post">
+        <input type="text" name="firstName"  placeholder="first name">
+        <br>
+        <input type="text" name="secondName" placeholder="second name">
+        <br>
+        <input type="text" name="email" placeholder="email">
+        <br>
+    <button type="rejister">rejister</button>
+    <a href="/">back</a>
+    
+<a href="user/delet<%user.id%>">delete</a>
+    </form>
+    </body>
+</html>
